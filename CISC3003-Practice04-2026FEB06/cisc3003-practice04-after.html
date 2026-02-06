@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- saved from url=(0112)https://ummoodle.um.edu.mo/pluginfile.php/1691614/mod_page/content/7/cisc3003-practice04.html?time=1770336308175 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <title>CISC3003: Practice 04</title>
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/cisc3003-practice04.css">
+</head>
+<body>
+<header>
+     <h1>Share Your Travels</h1>
+     <p>let us know where you've been</p>
+</header>
+<main>
+        <section class="photo-details">
+            <h2>PHOTO DETAILS</h2>
+
+            <!-- 第一区块：Title + Description -->
+            <div class="form-block">
+                <table>
+                    <tr>
+                        <th>Title</th>
+                        <td><input type="text" name="title" placeholder="Give your photo a descriptive name"></td>
+                    </tr>
+                    <tr>
+                        <th>Description</th>
+                        <td><textarea name="description" rows="5" cols="61" placeholder="Adding a rich description will help with search results"></textarea></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 第二区块：Continent/City + Copyright/CC -->
+            <div class="form-row">
+                <!-- 左列：Continent/City -->
+                <div class="form-col left-col">
+                    <table>
+                        <tr>
+                            <th>Continent</th>
+                            <td>
+                                <select name="continent">
+                                    <option value="">Choose continent</option>
+                                    <option value="africa">Africa</option>
+                                    <option value="asia">Asia</option>
+                                    <option value="europe">Europe</option>
+                                    <option value="north_america">North America</option>
+                                    <option value="south_america">South America</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Country</th>
+                            <td>
+                                <select name="country">
+                                    <option value="">Choose country</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="mexico">Mexico</option>
+                                    <option value="usa">United States</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>City</th>
+                            <td><input type="text" name="city" placeholder="Calgary, Montreal, Toronto, Vancouver"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- 右列：Copyright/CC -->
+                <div class="form-col right-col">
+                    <table>
+                        <tr>
+                            <th>Copyright?</th>
+                            <td>
+                                <input type="radio" name="copyright" value="reserved" id="cr-reserved">
+                                <label for="cr-reserved">All rights reserved</label><br>
+                                <input type="radio" name="copyright" value="cc" id="cr-cc" checked>
+                                <label for="cr-cc">Creative Commons</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Creative Commons Types</th>
+                            <td>
+                                <input type="checkbox" name="cc[]" value="attribution" id="cc-att">
+                                <label for="cc-att">Attribution</label><br>
+                                <input type="checkbox" name="cc[]" value="noncommercial" id="cc-nc">
+                                <label for="cc-nc">Noncommercial</label><br>
+                                <input type="checkbox" name="cc[]" value="no_derivs" id="cc-nd">
+                                <label for="cc-nd">No Derivative Works</label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 第三区块：License -->
+            <div class="form-block license-block">
+                <input type="checkbox" name="license_agree" id="license">
+                <label for="license">I accept the software license</label>
+            </div>
+
+            <!-- 第四区块：Rate/Color + Date/Time -->
+            <div class="form-row">
+                <!-- 左列：Rate/Color -->
+                <div class="form-col left-col">
+                    <table>
+                        <tr>
+                            <th>Rate this photo:</th>
+                            <td><input type="number" min="1" max="5" name="rate"></td>
+                        </tr>
+                        <tr>
+                            <th>Color Collection:</th>
+                            <td><input type="color" name="color"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- 右列：Date/Time -->
+                <div class="form-col right-col">
+                    <table>
+                        <tr>
+                            <th>Date Taken:</th>
+                            <td><input type="date" name="date"></td>
+                        </tr>
+                        <tr>
+                            <th>Time Taken:</th>
+                            <td><input type="time" name="time"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 第五区块：Buttons -->
+            <div class="form-block button-block">
+                <input type="submit" value="Submit" class="rounded">
+                <input type="reset" value="Clear Form" class="rounded">
+            </div>
+        </section>
+    </main>
+
+</body></html>

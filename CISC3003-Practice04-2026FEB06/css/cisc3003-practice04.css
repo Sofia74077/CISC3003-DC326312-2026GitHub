@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+h1, h2, h3, nav, footer {
+ font-family: Lobster, Cambria, "Times New Roman", serif;
+}
+body {
+   font-family: "Open Sans", Verdana, Arial, sans-serif;
+   font-size: 100%;
+   background-color: #E8EAF6;
+   margin: 0;
+   padding: 0;
+}
+
+
+header {
+  color: white;
+  background-color: #1A237E; 
+  padding: 10px 20px;
+  margin: 0;
+}
+header h1 { 
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+header p { 
+  font-size: 1rem;
+  font-style: italic;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+
+
+main {
+   background-color: white;
+   margin: 0 auto;
+   width: 90%;
+   max-width: 1000px;
+   padding: 15px;
+   box-sizing: border-box;
+}
+
+
+.photo-details h2 {
+  background-color: #5C6BC0; 
+  color: white;
+  font-family: "Open Sans", sans-serif; 
+  font-size: 1.8rem; 
+  font-weight: normal; 
+  text-transform: capitalize; 
+  padding: 12px 15px; 
+  margin: 0 0 0 0; 
+  letter-spacing: 0.5px; 
+}
+
+.form-block {
+  background-color: #C5CAE9; 
+  padding: 15px;
+  margin-bottom: 0; 
+}
+.form-row {
+  display: flex; 
+  gap: 0; 
+  margin-bottom: 0; 
+  
+  display: -webkit-flex;
+  -webkit-gap: 0;
+}
+.form-col {
+  background-color: #C5CAE9;
+  padding: 15px;
+  flex: 1; 
+  
+  -webkit-flex: 1;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+table tr {
+  display: block; 
+  margin-bottom: 10px; 
+}
+
+table th {
+  display: block; 
+  text-align: left;
+  width: 100%; 
+  vertical-align: top;
+  font-weight: bold;
+  color: #000; 
+  font-size: 0.95rem;
+  margin-bottom: 5px; 
+  padding: 0;
+}
+
+table td {
+  display: block; 
+  width: 100%; 
+  vertical-align: top;
+  padding: 0;
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="color"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #9FA8DA;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  background-color: white; 
+}
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+
+.license-block {
+  background-color: #9FA8DA; 
+  padding: 10px 15px;
+  margin-bottom: 0;
+}
+
+
+.button-block {
+  text-align: left;
+  padding: 10px 15px;
+}
+input.rounded {
+  background-color: #E91E63;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-right: 10px;
+}
+input.rounded:hover {
+  background-color: #D81B60;
+}
+
+
+footer {
+  color: white;
+  background-color: #1A237E;
+  padding: 10px 20px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+  box-sizing: border-box;
+  text-align: center;
+}
