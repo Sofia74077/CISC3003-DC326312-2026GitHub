@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summary - Our Business & Future</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* 统一卡片风格 */
+    .summary-container {
+      padding: 2rem 0;
+    }
+
+    .summary-card {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      border-top: 4px solid #007bff;
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .summary-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .summary-card h3 {
+      color: #333;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    .summary-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .summary-list li {
+      padding: 0.6rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .summary-list li:before {
+      content: "✓";
+      color: #28a745;
+      font-weight: bold;
+      margin-right: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">PixelCraft Studios</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="summary.html" class="active">Summary</a></li>
+        <li><a href="showcase.html">Showcase</a></li>
+        <li><a href="qualification.html">Qualification</a></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Business Summary</h1>
+    <p>Our Goals, Commitments & Future Directions</p>
+  </section>
+
+  <div class="container">
+    <!-- 左侧：3个核心模块 -->
+    <main class="content">
+      <div class="summary-container">
+
+        <!-- 1. Our Business Goals -->
+        <div class="summary-card">
+          <h3>Our Business Goals</h3>
+          <ul class="summary-list">
+            <li>Provide high-quality, professional web design services</li>
+            <li>Build responsive & user-friendly websites for clients</li>
+            <li>Complete projects on time with clear communication</li>
+            <li>Develop a strong portfolio for future career</li>
+            <li>Help clients build professional online presence</li>
+          </ul>
+        </div>
+
+        <!-- 2. Our Professional Commitments -->
+        <div class="summary-card">
+          <h3>Our Professional Commitments</h3>
+          <ul class="summary-list">
+            <li>Write clean, standard, and well-organized code</li>
+            <li>Ensure all websites are fully responsive & mobile-first</li>
+            <li>Maintain a responsible and professional work attitude</li>
+            <li>Keep learning and improving technical abilities</li>
+            <li>Provide reliable support for every project</li>
+          </ul>
+        </div>
+
+        <!-- 3. Our Future Directions -->
+        <div class="summary-card">
+          <h3>Our Future Directions</h3>
+          <ul class="summary-list">
+            <li>Learn advanced JavaScript and frontend frameworks</li>
+            <li>Take more real business projects to gain experience</li>
+            <li>Improve UI/UX design and development skills</li>
+            <li>Build personal professional brand in web industry</li>
+            <li>Keep up with latest web technologies and trends</li>
+          </ul>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- 右侧：侧边栏 -->
+    <aside class="sidebar">
+      <h3>Summary Highlights</h3>
+      <ul style="list-style: none; padding-left: 0;">
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">🎯 Clear Business Goals</li>
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">🤝 Strong Professional Commitments</li>
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">🚀 Clear Future Directions</li>
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">📈 Continuous Growth</li>
+        <li style="padding: 0.5rem 0;">💼 Professional Web Services</li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <p>PixelCraft Studios &copy; 2026 | CISC3003 Web Portfolio Project</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

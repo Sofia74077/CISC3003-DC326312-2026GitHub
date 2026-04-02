@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Qualifications - Business Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Qualification 页面专用样式 */
+    .qualification-container {
+      padding: 2rem 0;
+    }
+    
+    .qualification-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .qualification-card {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      border-top: 4px solid #007bff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .qualification-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .qualification-card h3 {
+      color: #333;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid #f0f0f0;
+    }
+    
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+    
+    .timeline-item {
+      position: relative;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .timeline-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    
+    .timeline-item:before {
+      content: '';
+      position: absolute;
+      left: -2rem;
+      top: 0.5rem;
+      width: 12px;
+      height: 12px;
+      background: #007bff;
+      border-radius: 50%;
+    }
+    
+    .timeline-year {
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 0.25rem;
+    }
+    
+    .timeline-title {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+    .awards-list, .services-list {
+      list-style: none;
+    }
+    
+    .awards-list li, .services-list li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #f5f5f5;
+      display: flex;
+      align-items: center;
+    }
+    
+    .awards-list li:last-child, .services-list li:last-child {
+      border-bottom: none;
+    }
+    
+    .awards-list li:before, .services-list li:before {
+      content: "✓";
+      color: #28a745;
+      font-weight: bold;
+      margin-right: 0.75rem;
+      font-size: 1.1rem;
+    }
+    
+    .skill-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    
+    .skill-badge {
+      background: #f8f9fa;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: #495057;
+      border: 1px solid #e9ecef;
+    }
+    
+    .skill-badge.primary {
+      background: #007bff;
+      color: white;
+    }
+    
+    .skill-badge.secondary {
+      background: #6c757d;
+      color: white;
+    }
+    
+    .skill-badge.success {
+      background: #28a745;
+      color: white;
+    }
+    
+    /* 平板和桌面响应式调整 */
+    @media (min-width: 768px) {
+      .qualification-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .qualification-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">PixelCraft Studios</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="summary.html">Summary</a></li>
+        <li><a href="showcase.html">Showcase</a></li>
+        <li><a href="qualification.html" class="active">Qualification</a></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Our Qualifications & Expertise</h1>
+    <p>Learn about our professional journey, experience, and capabilities</p>
+  </section>
+
+  <div class="container">
+    <main class="content">
+      <div class="qualification-container">
+        <h2>Professional Qualifications</h2>
+        <p>Explore our journey, experience, awards, and the range of services we offer to bring your digital vision to life.</p>
+        
+        <div class="qualification-grid">
+          <!-- Our History Section -->
+          <section class="qualification-card">
+            <h3>Our History</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-year">2022</div>
+                <div class="timeline-title">Formation of Our Partnership</div>
+                <p>Met as university students in the CISC3003 Web Technologies course and began collaborating on web projects.</p>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-year">2023</div>
+                <div class="timeline-title">First Commercial Project</div>
+                <p>Developed our first responsive website for a local business, establishing our approach to mobile-first design.</p>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-year">2024</div>
+                <div class="timeline-title">Portfolio Expansion</div>
+                <p>Expanded our services to include UI/UX design and began working with multiple clients across different industries.</p>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-year">2025 - Present</div>
+                <div class="timeline-title">Professional Growth</div>
+                <p>Continued to refine our skills, adopting modern frameworks and best practices in web development and design.</p>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Our Work Experience Section -->
+          <section class="qualification-card">
+            <h3>Our Work Experience</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-year">2024 - Present</div>
+                <div class="timeline-title">Freelance Web Developers</div>
+                <p>Designing and developing responsive websites for small to medium businesses, focusing on user experience and mobile optimization.</p>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-year">2023 - 2024</div>
+                <div class="timeline-title">University Web Lab Assistant</div>
+                <p>Assisted professors in web development courses, helping students with HTML, CSS, JavaScript, and responsive design principles.</p>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-year">2023</div>
+                <div class="timeline-title">Internship - Web Design Agency</div>
+                <p>Collaborated on client projects, learning industry-standard workflows and client management strategies.</p>
+              </div>
+            </div>
+            
+            <div class="skill-badges">
+              <span class="skill-badge primary">HTML5</span>
+              <span class="skill-badge primary">CSS3</span>
+              <span class="skill-badge primary">JavaScript</span>
+              <span class="skill-badge secondary">Responsive Design</span>
+              <span class="skill-badge secondary">UI/UX</span>
+              <span class="skill-badge success">Git</span>
+            </div>
+          </section>
+          
+          <!-- Our Awards Section -->
+          <section class="qualification-card">
+            <h3>Our Awards & Recognition</h3>
+            <ul class="awards-list">
+              <li>
+                <strong>Best Student Web Project 2024</strong>
+                <p>Awarded for our innovative travel sharing platform with exceptional mobile user experience.</p>
+              </li>
+              <li>
+                <strong>University Hackathon Finalist 2023</strong>
+                <p>Recognized for developing a functional CMS dashboard prototype within 48 hours.</p>
+              </li>
+              <li>
+                <strong>Excellence in Web Design 2023</strong>
+                <p>Awarded for outstanding performance in the CISC3003 Web Technologies course.</p>
+              </li>
+              <li>
+                <strong>Client Satisfaction Award 2024</strong>
+                <p>Received perfect 5-star ratings from all clients for communication and project delivery.</p>
+              </li>
+            </ul>
+          </section>
+          
+          <!-- Our Services Section -->
+          <section class="qualification-card">
+            <h3>Our Services</h3>
+            <p>We offer comprehensive web solutions tailored to your business needs:</p>
+            
+            <ul class="services-list">
+              <li>
+                <strong>Responsive Web Design</strong>
+                <p>Mobile-first approach ensuring your site looks great on all devices.</p>
+              </li>
+              <li>
+                <strong>Personal & Business Portfolio Websites</strong>
+                <p>Custom designs that showcase your work and professionalism.</p>
+              </li>
+              <li>
+                <strong>UI/UX Design</strong>
+                <p>User-centered design that enhances engagement and conversion.</p>
+              </li>
+              <li>
+                <strong>Frontend Development</strong>
+                <p>Clean, semantic code using HTML5, CSS3, and JavaScript.</p>
+              </li>
+              <li>
+                <strong>Website Maintenance & Updates</strong>
+                <p>Ongoing support to keep your site secure and up-to-date.</p>
+              </li>
+              <li>
+                <strong>Performance Optimization</strong>
+                <p>Fast-loading websites that improve user experience and SEO.</p>
+              </li>
+            </ul>
+            
+            <div style="margin-top: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+              <h4 style="margin-top: 0;">Ready to Start Your Project?</h4>
+              <p>Contact us today for a free consultation to discuss your website needs and get a customized proposal.</p>
+              <a href="index.html#contact" class="btn" style="display: inline-block; margin-top: 1rem;">Get In Touch</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <aside class="sidebar">
+      <h3>Our Expertise</h3>
+      <ul style="list-style: none; padding-left: 0;">
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✓ Responsive Web Design</li>
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✓ Mobile-First Development</li>
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✓ UI/UX Design</li>
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✓ HTML5 & CSS3</li>
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✓ JavaScript & jQuery</li>
+        <li style="padding: 0.5rem 0;">✓ Version Control (Git)</li>
+      </ul>
+      
+      <br>
+      
+      <h3>Certifications</h3>
+      <ul style="list-style: none; padding-left: 0;">
+        <li style="padding: 0.5rem 0;">• Responsive Web Design Certification</li>
+        <li style="padding: 0.5rem 0;">• JavaScript Algorithms Certification</li>
+        <li style="padding: 0.5rem 0;">• University Web Technologies Course</li>
+      </ul>
+      
+      <br>
+      
+      <h3>Quick Stats</h3>
+      <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px;">
+        <p style="margin: 0.5rem 0;"><strong>15+</strong> Projects Completed</p>
+        <p style="margin: 0.5rem 0;"><strong>100%</strong> Client Satisfaction</p>
+        <p style="margin: 0.5rem 0;"><strong>2+</strong> Years Experience</p>
+        <p style="margin: 0.5rem 0;"><strong>10+</strong> Technologies Mastered</p>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <p>CISC3003 Pair Assignment © 2026</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

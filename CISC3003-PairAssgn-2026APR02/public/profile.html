@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Our Values & Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* 统一风格卡片样式 */
+    .profile-container {
+      padding: 2rem 0;
+    }
+
+    .profile-card {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      border-top: 4px solid #007bff;
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .profile-card h3 {
+      color: #333;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    .profile-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .profile-list li {
+      padding: 0.6rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-list li:before {
+      content: "✓";
+      color: #28a745;
+      font-weight: bold;
+      margin-right: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">PixelCraft Studios</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html" class="active">Profile</a></li>
+        <li><a href="summary.html">Summary</a></li>
+        <li><a href="showcase.html">Showcase</a></li>
+        <li><a href="qualification.html">Qualification</a></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Our Profile</h1>
+    <p>Values, Career, Hobbies, Blog & Contact Information</p>
+  </section>
+
+  <div class="container">
+    <!-- 左侧：4个模块 -->
+    <main class="content">
+      <div class="profile-container">
+
+        <!-- 1. Our Values and Beliefs -->
+        <div class="profile-card">
+          <h3>Our Values and Beliefs</h3>
+          <ul class="profile-list">
+            <li>Integrity, honesty, and respect in all work</li>
+            <li>Commitment to quality and professional standards</li>
+            <li>Continuous learning and self-improvement</li>
+            <li>Responsibility and dedication to every project</li>
+            <li>Teamwork and positive communication</li>
+          </ul>
+        </div>
+
+        <!-- 2. Our Career Aspirations -->
+        <div class="profile-card">
+          <h3>Our Career Aspirations</h3>
+          <ul class="profile-list">
+            <li>Become professional frontend developers</li>
+            <li>Build modern, user-friendly websites and applications</li>
+            <li>Gain real-world working experience</li>
+            <li>Master advanced web technologies</li>
+            <li>Develop a successful career in IT industry</li>
+          </ul>
+        </div>
+
+        <!-- 3. Our Interests and Hobbies -->
+        <div class="profile-card">
+          <h3>Our Interests and Hobbies</h3>
+          <ul class="profile-list">
+            <li>Learning web design and programming</li>
+            <li>Reading tech articles and watching tutorials</li>
+            <li>Exploring new UI/UX design trends</li>
+            <li>Playing sports and outdoor activities</li>
+            <li>Listening to music and traveling</li>
+          </ul>
+        </div>
+
+        <!-- 4. Our Blog Posts -->
+        <div class="profile-card">
+          <h3>Our Blog Posts</h3>
+          <p>We share learning notes and experience about HTML5, CSS3, JavaScript, responsive design, and modern web development.</p>
+          <p>Our blog includes practical tips, project summaries, and study records to help more beginners learn web development easily.</p>
+          <p>We keep updating our knowledge and share it with others.</p>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- 右侧：Contact 放在这里 -->
+    <aside class="sidebar">
+      <h3>Our Contact</h3>
+      <p><strong>Email 1:</strong> dc32631@ourbusiness.com</p>
+      <p><strong>Email 2:</strong> dc32635@ourbusiness.com</p>
+      <p><strong>University:</strong> University of Macau</p>
+      <p><strong>Location:</strong> Macau, China</p>
+
+      <br>
+      <h3>Profile Highlights</h3>
+      <ul style="list-style: none; padding-left: 0;">
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✅ Strong Values</li>
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✅ Clear Career Goals</li>
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✅ Active Learning</li>
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">✅ Good Teamwork</li>
+        <li style="padding: 0.5rem 0;">✅ Easy to Contact</li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <p>PixelCraft Studios &copy; 2026 | CISC3003 Web Portfolio Project</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

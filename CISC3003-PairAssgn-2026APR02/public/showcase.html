@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Portfolio - Showcase</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* 针对Showcase页面的增强样式，保持移动优先 */
+    .project-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .project-card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      border-left: 4px solid #007bff;
+    }
+    .project-card h3 {
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+    .tech-tag {
+      background: #e9ecef;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      color: #495057;
+    }
+    .btn {
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 1rem;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+    /* 成就部分样式 - 已简化 */
+    .achievements {
+      background: #f8f9fa;
+      padding: 2rem 1.5rem;
+      border-radius: 8px;
+      margin: 3rem 0;
+      text-align: center;
+      border: 1px solid #e9ecef;
+    }
+    /* 报价部分样式 - 已简化 */
+    .business-offers {
+      padding: 2rem 0;
+      border-bottom: 1px solid #e9ecef;
+      margin-bottom: 2rem;
+    }
+    .offers-text {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #495057;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #e9ecef;
+    }
+    /* 平板和桌面响应式调整 */
+    @media (min-width: 768px) {
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">PixelCraft Studios</div> <!-- 使用了更专业的品牌名 -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="summary.html">Summary</a></li>
+        <li><a href="showcase.html">Showcase</a></li>
+        <li><a href="qualification.html">Qualification</a></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Our Creative Portfolio</h1>
+    <p>Discover the projects and solutions that define our craft</p>
+  </section>
+
+  <div class="container">
+    <main class="content">
+      <!-- 第一部分：作品集项目 (Our Portfolio Projects) -->
+      <section>
+        <h2>Featured Projects</h2>
+        <p>Each project represents a unique challenge and our commitment to innovative, user-centered web solutions.</p>
+        
+        <div class="project-grid">
+          <!-- 项目 1 -->
+          <div class="project-card">
+  			<h3>Art Filters - Art Image Gallery & Filter System</h3>
+  			<p>A dynamic web interface designed for art image presentation, featuring interactive sliders, filter controls, and a responsive gallery layout to display classic artworks.</p>
+  			<div class="tech-tags">
+    			<span class="tech-tag">HTML5</span>
+    			<span class="tech-tag">CSS3</span>
+    			<span class="tech-tag">JavaScript</span>
+    			<span class="tech-tag">DOM Manipulation</span>
+    			<span class="tech-tag">Responsive Design</span>
+  			</div>
+  			<p><strong>Challenge:</strong> Implementing intuitive image filtering functionality and slider controls while maintaining a clean, visually appealing layout that works seamlessly across different screen sizes.</p>
+  			<p><strong>Outcome:</strong> The project successfully delivers an engaging user experience with smooth interactions and clear visual hierarchy, allowing users to easily explore and filter through art images.</p>
+			<a href="https://emilyum.github.io/Hello-World/CISC3003-Practice08-2026MAR20/public/cisc3003-practice08-after.html" class="btn">View Project1</a>
+          </div>
+
+          <!-- 项目 2 -->
+          <div class="project-card">
+            <h3>Artwork store - Admin Interface Design</h3>
+            <p>A clean and systematic interface designed to simplify the detailed editing and metadata management of artworks for a course project.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Three.js</span>
+              <span class="tech-tag">WebGL</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">GSAP</span>
+            </div>
+            <p><strong>Challenge:</strong> Organizing numerous input fields and licensing options into a clear, intuitive layout without overwhelming the user.</p>
+            <p><strong>Outcome:</strong> Delivers a highly functional and user-friendly dashboard that streamlines data entry and improves workflow efficiency.</p>
+            <a href="https://emilyum.github.io/Hello-World/CISC3003-Practice07-2026MAR13/CISC3003%20Practice%2007-after.html" class="btn">View Project2</a>
+          </div>
+
+          <div class="project-card">
+            <h3>CRM Dashboard - Order Management Interface</h3>
+            <p>A data-dense CRM dashboard designed for efficient order tracking and client management.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">PWA</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+            <p><strong>Challenge:</strong>  To clearly present complex transactional data and multiple system modules in a single, scannable view without visual clutter.</p>
+            <p><strong>Outcome:</strong> The interface delivers a streamlined workflow, allowing users to process detailed order information quickly and with minimal effort.</p>
+            <a href="https://emilyum.github.io/Hello-World/CISC3003-Practice09-2026MAR27/public/cisc3003-practice09-after.html" class="btn">View Project3</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="achievements">
+        <h2>Our Accomplishments</h2>
+        <p>We've consistently delivered designs that blend visual clarity with functional efficiency, solving complex user experience challenges across diverse digital platforms.</p>
+      </section>
+
+      <section class="business-offers">
+        <h2>Our Business Offers</h2>
+        <div class="offers-text">
+          <p>We provide end-to-end web design services, from UX/UI and dashboard design to full website development, tailored to enhance your digital presence and user engagement.</p>
+        </div>
+      </section>
+    </main>
+
+    <aside class="sidebar">
+      <h3>Our Expertise</h3>
+      <ul>
+        <li>Responsive Web Design</li>
+        <li>UI/UX Design</li>
+        <li>Frontend Development</li>
+        <li>Performance Optimization</li>
+        <li>E-commerce Solutions</li>
+        <li>Brand Identity</li>
+      </ul>
+      <br>
+      <h3>Next Steps</h3>
+      <p>Ready to start your project? <a href="contact.html">Contact us</a> for a free consultation. We'll discuss your vision and provide a detailed proposal.</p>
+    </aside>
+  </div>
+
+  <footer>
+    <p>PixelCraft Studios &copy; 2026 | CISC3003 Web Portfolio Project</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
